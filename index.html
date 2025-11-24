@@ -6,37 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
 </head>
 
 <body>
-    <h1>Cadastro de Produtos</h1>
-
-    <form action="">
-        <label for="produto">Nome do Produto</label>
-        <input type="text" name="nome-produto" id="nome-produto" required>
-        <label for="preco">Preço</label>
-        <input type="number" name="preco-produto" id="preco-produto" required>
-
-        <select name="categoria" id="categoria">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-        </select>
-        <span class="msg"></span>
-        <button type="button" onclick="SalvarProduto()">Salvar Produto</button>
-    </form>
-    <table class="table-produtos">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Nome</th>
-                <th>Preço R$</th>
-                <th>Categoria</th>
-            </tr>
-        </thead>
-        <tbody class="table-body"></tbody>
-    </table>
+    <h1 class="main-title">Cadastro de Produtos</h1>
+    <main class="main">
+        <form class="formulario">
+            <label for="nome-produto">Nome do Produto</label>
+            <input type="text" name="nome-produto" id="nome-produto" required>
+            <label for="preco-produto">Preço</label>
+            <input type="number" name="preco-produto" id="preco-produto" required>
+            <label for="categoria">Categoria</label>
+            <select name="categoria" id="categoria">
+                <option value="">Selecione uma categoria</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <span class="msg"></span>
+            <button type="button" onclick="SalvarProduto()">Salvar Produto</button>
+        </form>
+        <table class="table-produtos">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Preço R$</th>
+                    <th>Categoria</th>
+                </tr>
+            </thead>
+            <tbody class="table-body"></tbody>
+        </table>
+        <button class="btn-deletar" onclick="DeletarDB()">Deletar Banco</button>
+    </main>
 </body>
-<script src="app.js"></script>
+
 
 </html>

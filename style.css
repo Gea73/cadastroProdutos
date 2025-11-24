@@ -1,5 +1,88 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+.main-title {
+    text-align: center;
+    margin: 1rem;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid black;
+    max-width: fit-content;
+    padding: 3rem;
+
+}
+
+.main {
+    justify-items: center;
+    text-align: center;
+}
+
+label {
+    margin: 0.5rem;
+}
+
+input {
+    margin: 0.5rem;
+    text-align: center;
+}
+
+input:focus {
+    transform: scale(1.05);
+
+}
+
+select {
+    margin: 0.5rem;
+}
+
+select:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+
+}
+
+option{
+    text-align: center;
+}
+
+
+button {
+    padding: 0.5rem;
+    margin: 0.3rem;
+    background-color: green;
+    border: 1px solid white;
+    border-radius: 5px;
+   
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+table{
+  
+    margin: 1rem;
+}
+th{
+    padding: 1rem;
+    
+}
+td{
+    padding: 1rem;
+    
+}
+.btn-editar{
+    background-color: yellow;
+}
+.btn-deletar{
+    background-color: red;
 }
